@@ -1,10 +1,15 @@
-import React from "react";
+import Tabs from "./Tabs";
 
 const Header: React.FC = () => {
   return (
-    <nav className="bg-gray-800">
-      <div className="flex items-center justify-between h-12 px-4">
-        <h1 className="text-white text-lg">XSS Generator</h1>
+    <nav className="bg-gray-900">
+      <div className="flex justify-between pt-4 pr-6">
+        <div>
+          <Tabs />
+        </div>
+        <div>
+          <h1 className="text-gray-300 text-right">XSS Generator</h1>
+        </div>
       </div>
     </nav>
   );
